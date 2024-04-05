@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-AnimeReviewApiApplication<anime-review-api>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "dev.engelhard.animereviewapi.AnimeReviewApiApplication",
+            "projectName": "anime-review-api",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
