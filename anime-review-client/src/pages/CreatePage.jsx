@@ -26,7 +26,7 @@ const CreatePage = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
+        
         // TODO: Logic to submit the form
     };
 
@@ -53,7 +53,7 @@ const CreatePage = () => {
                             Link
                         </label>
                         <input
-                            type="url"
+                            type="text"
                             className="form_style"
                             id="link"
                             placeholder="Enter anime link"
