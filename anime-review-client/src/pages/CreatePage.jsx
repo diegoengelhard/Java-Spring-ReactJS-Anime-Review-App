@@ -27,7 +27,16 @@ const CreatePage = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         
-        // TODO: Logic to submit the form
+        try {
+            axios.post("http://localhost:8080/api/reviews", form);
+            toast.success("Review created successfully");
+            setTimeout(() => {
+                navigate("/");
+            }, 2000);
+        } catch (error) {
+            console.log(error);
+            toast.error("Failed to create review");
+        }
     };
 
     return (
