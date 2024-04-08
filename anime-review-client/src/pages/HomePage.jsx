@@ -58,7 +58,7 @@ const HomePage = () => {
             </div>
 
             {reviews.length === 0 && (
-                <p className="no_result">Oops, No anime review available</p>
+                <p className="no_result">No anime reviews yet. Feel free to add yours!</p>
             )}
         </>
     )
