@@ -15,6 +15,7 @@ const HomePage = () => {
             try {
                 setLoading(true);
                 const response = await axios.get("http://localhost:8080/api/reviews");
+                console.log(response.data);
                 setReviews(response.data);
                 setLoading(false);
             } catch (error) {
@@ -58,7 +59,9 @@ const HomePage = () => {
             </div>
 
             {reviews.length === 0 && (
-                <p className="no_result">No anime reviews yet. Feel free to add yours!</p>
+                <div className="center">
+                    <p className="no_result">No anime reviews yet. Feel free to add yours! </p>
+                </div>
             )}
         </>
     )
