@@ -19,11 +19,18 @@ The project is a full-stack __Dockerized__ application designed to enable users 
 ## Getting started
 Follow the next steps to run the app:
 
-1. In main directory, run docker compose:
+1. Change to the api direcory:
+```
+cd anime-review-api
+```
+
+2. Copy the `.env.exmaple` to your own `.env` file
+
+3. In main directory, run docker compose:
 ```
 docker-compose up
 ```
 
-2. Open `http://localhost:5173` to open the project result
+4. Open `http://localhost:5173` to open the project result
 
-3. Open `http://localhost:5555` to open the Prisma ORM client
+5. Open `http://localhost:5555` to open the Prisma ORM client
